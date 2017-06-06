@@ -10,7 +10,7 @@ module WillPaginate
       options[:renderer] ||= BootstrapLinkRenderer
       options[:previous_label] = '&laquo;'
       options[:next_label] = '&raquo;'
-      options[:inner_window] = 2
+      options[:inner_window] ||= 2
 
       super(collection, options)
     end
